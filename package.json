@@ -1,0 +1,9 @@
+{
+  "name": "enhancederror",
+  "version": "0.0.1",
+  "description": "Enhanced JavaScript Error",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Andy Kogut",
+  "license": "ISC"
+}
