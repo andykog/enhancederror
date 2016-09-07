@@ -19,7 +19,7 @@ import EnhancedError from 'enhancederror';
 umd:
 
 ```js
-<srctipt src="https://npmcdn.com/enhancederror/lib/enhancederror.umd.js"></script>
+<srctipt src="https://unpkg.com/enhancederror/lib/enhancederror.umd.js"></script>
 ```
 
 
