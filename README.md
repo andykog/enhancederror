@@ -6,7 +6,13 @@ to provide error code or other information;
 
 Supports UMD (Universal Module Definition)
 
+Feels like natural Error when printing in console.
+
 ```
+npm install --save enhancederror
+```
+
+```js
 const a = new EnhancedError('Message', 10085);
 
 const b = new EnhancedError({
@@ -18,4 +24,7 @@ const b = new EnhancedError({
 a.code === b.code; // true
 
 b.otherProp; // true
+
+a instanceof EnhancedError; // true
+a instanceof Error; // true
 ```
