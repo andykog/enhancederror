@@ -1,9 +1,14 @@
 {
   "name": "enhancederror",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "Enhanced JavaScript Error",
-  "main": "index.js",
-  "scripts": {},
+  "main": "lib/enhancederror.js",
+  "scripts": {
+    "build": "npm run build:commonjs && npm run build:umd",
+    "build:commonjs": "cp src/index.js  lib/enhancederror.js",
+    "build:umd": "browserify -s EnhancedError src/index.js -o lib/enhancederror.umd.js",
+    "prepublish": "npm run build"
+  },
   "author": "Andy Kogut",
   "license": "ISC",
   "repository": {

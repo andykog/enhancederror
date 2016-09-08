@@ -4,13 +4,25 @@ EnhancedError
 Adds missing Error's feature in JS - ability
 to provide error code or other information;
 
-Supports UMD (Universal Module Definition)
-
 Feels like natural Error when printing in console.
 
 ```
 npm install --save enhancederror
 ```
+
+commonjs:
+
+```js
+import EnhancedError from 'enhancederror';
+```
+
+umd:
+
+```js
+<srctipt src="https://npmcdn.com/enhancederror/lib/enhancederror.umd.js"></script>
+```
+
+
 
 ```js
 const a = new EnhancedError('Message', 10085);
