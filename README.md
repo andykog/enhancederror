@@ -17,8 +17,8 @@ const a = new EnhancedError('Message', 10085);
 
 const b = new EnhancedError({
   message: 'OtherMessage',
-  code: 10085
-  customProp: true,
+  code: 10085,
+  customProp: true
 });
 
 a.code === b.code; // true
